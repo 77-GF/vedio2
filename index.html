@@ -194,7 +194,7 @@
       </svg>
     </div>
     <h2>点击或拖拽上传</h2>
-    <p>仅支持 .mp4 格式，文件大小不超过 500MB</p>
+    <p>仅支持 .mp4 格式，文件大小不超过 1GB</p>
     <input type="file" id="fileInput" accept="video/mp4,.mp4">
   </div>
 
@@ -242,7 +242,7 @@
   const progressPercent = document.getElementById('progressPercent');
   const toast = document.getElementById('toast');
 
-  const MAX_SIZE = 500 * 1024 * 1024; // 500MB
+  const MAX_SIZE = 1024 * 1024 * 1024; // 1GB
   let selectedFile = null;
   let toastTimer = null;
 
